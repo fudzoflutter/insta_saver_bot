@@ -1,5 +1,4 @@
 Flask==2.3.2
 instaloader==4.10.1
-sqlite3==2.6.0
 logging==0.5.1.2
 requests==2.31.0
