@@ -1,0 +1,23 @@
+# Python asosiy image-ni olish
+FROM python:3.9-slim
+
+# Dart ni o'rnatish
+RUN apt-get update && apt-get install -y curl
+RUN curl -fsSL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN echo "deb [signed-by=/usr/share/keyrings/dart.gpg] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main" | tee /etc/apt/sources.list.d/dart_stable.list
+RUN apt-get update && apt-get install -y dart
+
+# Ishchi papka yaratish (working directory)
+WORKDIR /app
+
+# Barcha fayllarni Docker image-ga nusxalash
+COPY . .
+
+# Python paketlarini o'rnatish
+RUN pip install -r requirements.txt
+
+# Dart paketlarini o'rnatish
+RUN dart pub get
+
+# Python va Dart dasturlarini ishga tushirish
+CMD python api_services.py & dart run body.dart
