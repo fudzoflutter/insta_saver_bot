@@ -1,0 +1,18 @@
+2025-02-04 18:08:30,767 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 18:08:30,767 - [33mPress CTRL+C to quit[0m
+2025-02-04 18:08:30,769 -  * Restarting with stat
+2025-02-04 18:08:31,780 -  * Debugger is active!
+2025-02-04 18:08:31,783 -  * Debugger PIN: 103-691-843
+2025-02-04 18:08:35,498 - IP: 127.0.0.1, URL: https://www.instagram.com/reel/DFpm5s2q6BU/?igsh=ZmNueDczYWhzYWRp
+2025-02-04 18:08:38,782 - 127.0.0.1 - - [04/Feb/2025 18:08:38] "POST /download HTTP/1.1" 200 -
+2025-02-04 18:09:35,490 - IP: 127.0.0.1, URL: https://www.instagram.com/p/DFcorF7ozzd/?img_index=1&igsh=M2l6ajdvcnh0NXZk
+2025-02-04 18:09:39,091 - 127.0.0.1 - - [04/Feb/2025 18:09:39] "POST /download HTTP/1.1" 200 -
+2025-02-04 18:10:10,680 - 127.0.0.1 - - [04/Feb/2025 18:10:10] "GET /admin HTTP/1.1" 200 -
+2025-02-04 18:10:10,905 - 127.0.0.1 - - [04/Feb/2025 18:10:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 18:11:15,208 - 127.0.0.1 - - [04/Feb/2025 18:11:15] "GET /monitoring HTTP/1.1" 200 -
+2025-02-04 18:12:28,360 - 127.0.0.1 - - [04/Feb/2025 18:12:28] "GET /admin HTTP/1.1" 200 -
+2025-02-04 18:13:43,910 -  * Detected change in 'g:\\Online FLutter\\1-modul\\instagram_saver_bot\\bin\\api_services.py', reloading
+2025-02-04 18:13:43,990 -  * Restarting with stat
+2025-02-04 18:13:45,008 -  * Debugger is active!
+2025-02-04 18:13:45,011 -  * Debugger PIN: 103-691-843

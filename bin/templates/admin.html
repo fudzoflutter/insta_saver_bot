@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <h2>Foydalanuvchi Harakatlari</h2>
+    <h3>Log Fayli</h3>
+    <pre>
+        {% for log in logs %}
+        {{ log }}
+        {% endfor %}
+    </pre>
+    <h3>Ma'lumotlar Bazasi</h3>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>IP Manzil</th>
+            <th>URL</th>
+            <th>Vaqt</th>
+        </tr>
+        {% for activity in activities %}
+        <tr>
+            <td>{{ activity[0] }}</td>
+            <td>{{ activity[1] }}</td>
+            <td>{{ activity[2] }}</td>
+            <td>{{ activity[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
